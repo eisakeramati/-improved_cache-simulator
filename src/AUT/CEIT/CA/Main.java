@@ -15,8 +15,6 @@ public class Main {
 
         inputCreator inputCreator = new inputCreator();
         for (int i = 0; i <inputCreator.getFianl_arr().length ; i++) {
-            if (i==100)
-                System.out.println("donedonedonedonedonedonedonedonedonedonedonedone");
             System.out.println(inputCreator.getFianl_arr()[i]);
         }
     }

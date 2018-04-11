@@ -1,5 +1,9 @@
 package AUT.CEIT.CA;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.nio.file.Path;
 import java.util.Random;
 
 /**
@@ -23,6 +27,7 @@ public class inputCreator {
         final_arr = new int[500];
         randomSetter();
         finSetter();
+        toOutput();
     }
 
     public int[] getFirst_arr() {
@@ -96,5 +101,21 @@ public class inputCreator {
         return last % 4;
     }
 
+
+    private void toOutput() {
+        File file = new File("D:\\inputs");
+        if (!file.exists()) {
+            file.mkdir();
+        }
+        try {
+            FileWriter fw = new FileWriter("D:\\inputs\\file1.txt");
+            for (int i = 0; i < final_arr.length; i++) {
+                fw.write(Long.toBinaryString( final_arr[i] & 0xffffffffL | 0x100000000L ).substring(1));
+                fw.append(System.lineSeparator());
+            }
+        } catch (IOException ex) {
+            System.out.println(ex.getMessage());
+        }
+    }
 
 }
