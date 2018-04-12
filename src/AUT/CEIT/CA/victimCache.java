@@ -1,20 +1,23 @@
 package AUT.CEIT.CA;
 
-/**
- * Created by eisak on 2018-04-12.
- */
+import AUT.CEIT.CA.adress;
+
 public class victimCache {
 
-    private int size = 256;
+    private int size = 16;
     private adress[] vicCahce;
     private int counter = 0;
 
     public victimCache() {
         vicCahce = new adress[size];
+        for (int i = 0; i < size; i ++)
+            vicCahce[i] = new adress(-1);
     }
 
     public int refrenceHandler(int refrence) {
         int output = refrenceChecker(refrence);
+        if (output == -1)
+            return output;
         adress a = vicCahce[output];
         if (output != -1) {
             shifter(output);
@@ -38,7 +41,7 @@ public class victimCache {
 
     public void adderToCache(int givenAdd) {
 
-        shifter(vicCahce.length);
+        shifter(vicCahce.length-1);
         vicCahce[0] = new adress(givenAdd);
     }
 

@@ -3,12 +3,9 @@ package AUT.CEIT.CA;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.nio.file.Path;
 import java.util.Random;
 
-/**
- * Created by eisak on 2018-04-09.
- */
+
 public class inputCreator {
 
     private int first_arr[];
@@ -42,7 +39,7 @@ public class inputCreator {
 
 
         for (int i = 0; i < 100; i++) {
-            first_arr[i] = randomNumberInRange(0, 4000);
+            first_arr[i] = randomNumberInRange(0, 8000);
         }
     }
 
@@ -103,16 +100,17 @@ public class inputCreator {
 
 
     private void toOutput() {
-        File file = new File("D:\\inputs");
+        File file = new File("inputs");
         if (!file.exists()) {
             file.mkdir();
         }
         try {
-            FileWriter fw = new FileWriter("D:\\inputs\\file1.txt");
+            FileWriter fw = new FileWriter("inputs\\file1.txt");
             for (int i = 0; i < final_arr.length; i++) {
                 fw.write(Long.toBinaryString( final_arr[i] & 0xffffffffL | 0x100000000L ).substring(1));
                 fw.append(System.lineSeparator());
             }
+            fw.close();
         } catch (IOException ex) {
             System.out.println(ex.getMessage());
         }

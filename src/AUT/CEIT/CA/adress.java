@@ -1,8 +1,5 @@
 package AUT.CEIT.CA;
 
-/**
- * Created by eisak on 2018-04-12.
- */
 public class adress {
 
     private int score;
