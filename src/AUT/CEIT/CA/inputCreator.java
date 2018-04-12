@@ -42,7 +42,7 @@ public class inputCreator {
 
 
         for (int i = 0; i < 100; i++) {
-            first_arr[i] = randomNumberInRange(0, 2000);
+            first_arr[i] = randomNumberInRange(0, 4000);
         }
     }
 
