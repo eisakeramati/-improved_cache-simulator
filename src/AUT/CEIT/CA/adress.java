@@ -1,0 +1,31 @@
+package AUT.CEIT.CA;
+
+/**
+ * Created by eisak on 2018-04-12.
+ */
+public class adress {
+
+    private int score;
+    private int number;
+
+    public int getScore() {
+        return score;
+    }
+
+    public void setScore(int score) {
+        this.score = score;
+    }
+
+    public int getNumber() {
+        return number;
+    }
+
+    public void setNumber(int number) {
+        this.number = number;
+    }
+
+    public adress(int number) {
+        this.number = number;
+        score = 0;
+    }
+}
