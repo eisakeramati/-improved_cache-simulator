@@ -4,7 +4,6 @@
     <list default="true" id="69a46019-7d76-46fb-9001-12aba767b015" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/improved_cache_simulator/AUT/CEIT/CA/Main.class" afterPath="$PROJECT_DIR$/out/production/improved_cache_simulator/AUT/CEIT/CA/Main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AUT/CEIT/CA/Main.java" afterPath="$PROJECT_DIR$/src/AUT/CEIT/CA/Main.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,7 +16,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AUT/CEIT/CA/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="200">
@@ -39,7 +38,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="victimCache.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="victimCache.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/AUT/CEIT/CA/victimCache.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="575">
@@ -578,7 +577,7 @@
       <workItem from="1523469653120" duration="180000" />
       <workItem from="1523469994426" duration="859000" />
       <workItem from="1523517363157" duration="4906000" />
-      <workItem from="1523537172492" duration="3047000" />
+      <workItem from="1523537172492" duration="3098000" />
     </task>
     <task id="LOCAL-00001" summary="second commit">
       <created>1523447855058</created>
@@ -608,11 +607,18 @@
       <option name="project" value="LOCAL" />
       <updated>1523540126756</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="4th with changes commit">
+      <created>1523540235069</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1523540235069</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26010000" />
+    <option name="totallyTimeSpent" value="26061000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="2278" height="1466" extended-state="0" />
@@ -659,7 +665,8 @@
     <MESSAGE value="second commit" />
     <MESSAGE value="third commit" />
     <MESSAGE value="4th commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="4th commit" />
+    <MESSAGE value="4th with changes commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="4th with changes commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -791,6 +798,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/AUT/CEIT/CA/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/AUT/CEIT/CA/adress.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
@@ -809,14 +824,6 @@
             <element signature="e#207#208#0" expanded="true" />
             <element signature="e#250#251#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AUT/CEIT/CA/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
