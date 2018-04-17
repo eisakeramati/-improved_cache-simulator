@@ -76,13 +76,23 @@ public class inputCreator {
                 counter++;
                 temp++;
             } else {
+//                final_arr[i] = first_arr[randomNumberInRange(0, 99)];
+//                i++;
+//                final_arr[i] = first_arr[randomNumberInRange(0, 99)];
+//                i++;
+//                final_arr[i] = first_arr[randomNumberInRange(0, 99)];
+//                i++;
+//                final_arr[i] = first_arr[randomNumberInRange(0, 99)];
+//                counter++;
+
                 final_arr[i] = first_arr[randomNumberInRange(0, 99)];
+                final_arr[i] = randomNumberInRange(0, 7999);
                 i++;
-                final_arr[i] = first_arr[randomNumberInRange(0, 99)];
+                final_arr[i] = randomNumberInRange(0, 7999);
                 i++;
-                final_arr[i] = first_arr[randomNumberInRange(0, 99)];
+                final_arr[i] = randomNumberInRange(0, 7999);
                 i++;
-                final_arr[i] = first_arr[randomNumberInRange(0, 99)];
+                final_arr[i] = randomNumberInRange(0, 7999);
                 counter++;
             }
         }
@@ -107,7 +117,7 @@ public class inputCreator {
         try {
             FileWriter fw = new FileWriter("inputs\\file1.txt");
             for (int i = 0; i < final_arr.length; i++) {
-                fw.write(Long.toBinaryString( final_arr[i] & 0xffffffffL | 0x100000000L ).substring(1));
+                fw.write(Long.toBinaryString(final_arr[i] & 0xffffffffL | 0x100000000L).substring(1));
                 fw.append(System.lineSeparator());
             }
             fw.close();
